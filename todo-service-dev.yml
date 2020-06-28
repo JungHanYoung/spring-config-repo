@@ -2,3 +2,6 @@ spring:
     application:
         name: todo-service
     message: "Hello TODO Service"
+
+server:
+    port: 8082
