@@ -3,5 +3,17 @@ spring:
         name: calendar-service
     message: "Hello Calendar"
 
+    # JPA
+    jpa:
+        show_sql: true
+        hibernate:
+            ddl-auto: create
+
+    # DB
+    datasource:
+        url: jdbc:postgresql://localhost:5432/gulmate
+        username: postgres
+        password: '{cipher}AQCSscpcIWBIpfOD1NFWLkvAOx9zvECjGYe86B15NYZ/CWfc5iKPecTNHifws2VS1bVK0yOi+ncn0Hb/A7wiZBaGFepMz5heh1ScG7/LK8BFYPRrRs8v4EZJMMyhq6SU1QUmioQuxfFq0oM1bPhSIwzta370Kj8KNLt3GDLwPiRFjIDXyIyH7F1DJhJl7KkeuEj2L3uWDVoKMbmE+tCVwQw/nUhpYHZewWINV5KJr6cZgxTyCHl18/XibV6dkZG5Qq8VTbGAvE/UKrxXoqxLOEvSehECVZWbYH511b6Y+vEiP32Qs1zDZY2QKmuDIcoj6rsOP7pn4YdsAEwpttU8gHtuzP7LoNNK6sVs5QSd/k4l4ivefTxB0WYEBPAEVIMmGkM='
+
 server:
     port: 8081
